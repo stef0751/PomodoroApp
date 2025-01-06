@@ -13,11 +13,16 @@ const ToDoList = () => {
   };
 
   const toggleComplete = (index) => {
-    const updatedTasks = tasks.map((task, i) =>
-      i === index ? { ...task, completed: !task.completed } : task
-    );
+    const updatedTasks = tasks.map((task, i) => {
+      if (i === index) {
+        return { ...task, completed: !task.completed };
+      } else {
+        return task;
+      }
+    });
     setTasks(updatedTasks);
   };
+  
 
   const deleteTask = (index) => {
     setTasks(tasks.filter((_, i) => i !== index));

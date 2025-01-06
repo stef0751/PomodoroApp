@@ -12,7 +12,7 @@ code {
 }
 
 .container {
-  color:#c9ccea;
+  color:#9094c4;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +21,7 @@ code {
 }
 
 .container h1 {
-  font-size:2.6rem;
+  font-size:2.9rem;
   margin-bottom:0.2rem;
 }
 .container h2
